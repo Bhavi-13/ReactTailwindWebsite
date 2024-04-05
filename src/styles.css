@@ -1,0 +1,41 @@
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+}
+
+.clients-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  .clients-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+  
+  .clients {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .clients img {
+    width: 200px;
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust spacing between images if needed */
+  }
+
+  @media screen and (max-width:768px){
+    .clients img {
+      width: 100px;
+      flex: 0 0 auto;
+      margin-right: 7px; /* Adjust spacing between images if needed */
+    }
+  }
+
+  
+  
