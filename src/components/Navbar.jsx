@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import logo from '../images/logo_company.svg'
+import name from '../images/company_name.svg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,8 +9,8 @@ const Navbar = () => {
     <nav className="p-4 relative">
       <div className="lg:max-w-5xl xl:max-w-7xl md:w-full xl:mt-5 lg:mx-auto xs:px-3 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="https://assets.calendly.com/assets/frontend/media/calendly-33a0809afc4c21162dd7.svg" alt="Logo" className="h-8 mr-2" />
-          <img src="https://assets.calendly.com/assets/frontend/media/calendly-wordmark-0da6c58d9a06b08c975f.svg" alt="app name" className='mt-1' />
+          <img src={logo} alt="Logo" className="h-8 mr-2" />
+          <img src={name} alt="app name" className='mt-1' />
         </div>
 
         {/* Desktop Menu */}

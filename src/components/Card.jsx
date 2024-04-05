@@ -12,10 +12,10 @@ function Card({ heading, text, link, content, icon, isIcon }) {
           ) : (
             <img src={content} alt={heading} className="mb-3 h-32 w-full object-cover" />
           )}
-          <h3 className="text-md text-blue-950 lg:px-4 xl:px-4 md:px-4 xs:px-2 xs:text-sm font-semibold lg:mb-5 md:mb-5 xs:mb-2">{heading}</h3>
-          <p className="text-gray-500 font-light xs:text-xs xs:mb-2 lg:px-4 xl:px-4 md:px-4 xs:px-2 text-sm leading-relaxed">{text}</p>
+          <h3 className="lg:text-lg xl:text-lg md:text-md text-blue-950 lg:px-4 xl:px-4 md:px-4 xs:px-2 xs:text-[10px] font-semibold lg:mb-5 md:mb-5 xs:mb-2">{heading}</h3>
+          <p className="text-gray-500 lg:text-sm xl:text-sm md:text-xs font-light xs:text-[9px] xs:mb-2 lg:px-4 xl:px-4 md:px-4 xs:px-2 text-sm leading-relaxed">{text}</p>
         </div>
-        <a href={link} className="text-blue-500 mt-auto lg:px-4 xl:px-4 md:px-4 xs:px-2 xl:text-sm lg:text-sm md:text-sm sm:text-xs xs:text-xs font-semibold">
+        <a href={link} className="text-blue-500 mt-auto lg:px-4 xl:px-4 md:px-4 xs:px-2 xl:text-sm lg:text-sm md:text-sm sm:text-xs xs:text-[10px] font-semibold">
           Learn More
           <FontAwesomeIcon icon={faAngleRight} className="ml-2 text-xs"/>
         </a>
